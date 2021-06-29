@@ -106,10 +106,10 @@ let make = (~upload, ~delete) => {
       />
     </label>
     {switch (state.file) {
-     | None => ReasonReact.null
+     | None => React.null
      | Some(file) =>
        <div className=Styles.deleter>
-         <p> {ReasonReact.string(file)} </p>
+         <p> {React.string(file)} </p>
          <button
            className=Styles.deleteButton
            onClick={_e => {

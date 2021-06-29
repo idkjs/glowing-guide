@@ -57,7 +57,7 @@ let make = (~children, ~title) => {
     <button
       type_="button" className=Styles.button onClick={_e => dispatch(Toggle)}>
       <Chevron style=Styles.(state.expanded ? chevronDown : chevron) />
-      <span className=Styles.title> {ReasonReact.string(title)} </span>
+      <span className=Styles.title> {React.string(title)} </span>
     </button>
     <div
       className={state.expanded ? Styles.expanded : Styles.notExpanded}

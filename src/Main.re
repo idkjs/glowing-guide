@@ -57,11 +57,11 @@ let make = () => {
         </div>
       </Expander>
     </div>
-    <div className=Styles.content> {ReasonReact.string("content")} </div>
+    <div className=Styles.content> {React.string("content")} </div>
     {switch (state.file) {
-     | None => ReasonReact.null
+     | None => React.null
      | Some(file) => <img src=file />
      }}
-    <h1> {ReasonReact.string(state.title)} </h1>
+    <h1> {React.string(state.title)} </h1>
   </div>;
 };
