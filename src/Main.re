@@ -17,7 +17,7 @@ module Styles = {
     "*",
     [
       boxSizing(borderBox),
-      fontFamily("Helvetica Neue, Segoe UI, arial, sans-serif"),
+      fontFamily(`custom("Helvetica Neue, Segoe UI, arial, sans-serif")),
     ],
   );
 

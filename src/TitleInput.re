@@ -10,15 +10,16 @@ module Styles = {
       lineHeight(rem(1.0)),
       maxWidth(pct(100.0)),
       fontSize(rem(1.5)),
-      padding4(rem(0.75), rem(0.0), rem(0.75), rem(1.25)),
+      padding4(~top=`rem(0.75), ~bottom=`rem(0.0), ~left=`rem(0.75), ~right=`rem(1.25)),
+
     ]);
 };
 
 [@react.component]
 let make = (~update, ~startText) => {
-  let (state, dispatch) =
+  let (_, dispatch) =
     React.useReducer(
-      (state, action) =>
+      (_, action) =>
         switch ((action: action)) {
         | Update(text) => {text: text}
         },
