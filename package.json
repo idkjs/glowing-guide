@@ -2,6 +2,7 @@
   "name": "nhoshape",
   "version": "0.1.0",
   "scripts": {
+    "format": "find . -name \"*.re\" -or -name \"*.rei\" | grep -v \"node_modules\" | xargs bsrefmt --in-place",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",

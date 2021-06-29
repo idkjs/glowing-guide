@@ -25,7 +25,12 @@ module Styles = {
       display(inlineBlock),
       borderStyle(none),
       background(none),
-      padding4(~top=`px(10), ~bottom=`px(40), ~left=`px(10), ~right=`px(40)),
+      padding4(
+        ~top=`px(10),
+        ~bottom=`px(40),
+        ~left=`px(10),
+        ~right=`px(40),
+      ),
       hover([fontWeight(bold)]),
     ]);
   let dropStyle =
@@ -34,13 +39,7 @@ module Styles = {
       padding(px(60)),
       display(block),
       borderRadius(px(5)),
-      boxShadow(
-        Shadow.box(
-          ~y=px(1),
-          ~blur=px(2),
-          Theme.textBlack,
-        ),
-      ),
+      boxShadow(Shadow.box(~y=px(1), ~blur=px(2), Theme.textBlack)),
     ]);
 
   let dropArea = valid =>

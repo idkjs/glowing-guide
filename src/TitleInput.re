@@ -10,8 +10,12 @@ module Styles = {
       lineHeight(rem(1.0)),
       maxWidth(pct(100.0)),
       fontSize(rem(1.5)),
-      padding4(~top=`rem(0.75), ~bottom=`rem(0.0), ~left=`rem(0.75), ~right=`rem(1.25)),
-
+      padding4(
+        ~top=`rem(0.75),
+        ~bottom=`rem(0.0),
+        ~left=`rem(0.75),
+        ~right=`rem(1.25),
+      ),
     ]);
 };
 
